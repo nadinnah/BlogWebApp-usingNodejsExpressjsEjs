@@ -1,10 +1,15 @@
-
 <%-include("partials/header.ejs") %>
+<link rel="stylesheet" href="/styles/main.css">
+
 <h1>Welcome to your Blog page, read some of your recent blogs:</h1>
 <div class="blogs">
-   <a > <%=locals.title %></a>
-   
+    <% blogs.forEach(function(blog) { %>
 
+        <a href="/blogwriting/<%= blog.id %>" ><%= blog.title %></a>
+        <a href="/Edit/<%= blog.id %>" class="back" style="display: inline; "> Edit or Delete Blog</a>
+
+        <br>
+      <% }) %>
 </div>
 
 <%-include("partials/footer.ejs") %>
