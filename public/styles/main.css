@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 
-html {
-    margin: 0;
-    padding: 0;
-}
+
 
 body {
     font-family: 'Arial', sans-serif;
@@ -23,7 +20,7 @@ body {
 }
 
 .navbar-container {
-    max-width: 1200px;
+    max-width: 1100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -40,17 +37,19 @@ body {
 .navbar-menu {
     list-style-type: none;
     display: flex;
+    margin-right: 90px; 
 }
 
 .navbar-item {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .navbar-link {
     text-decoration: none;
     color: rgb(242, 237, 237);
-    font-size: 16px;
+    font-size: 20px;
     transition: color 0.3s ease;
+    
 }
 
 .navbar-link:hover {
